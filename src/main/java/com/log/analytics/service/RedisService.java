@@ -1,11 +1,10 @@
 package com.log.analytics.service;
 
-import com.log.analytics.exceptions.NoDataFoundException;
 import org.springframework.stereotype.Service;
-import org.springframework.util.CollectionUtils;
 import redis.clients.jedis.Jedis;
 
-import java.util.*;
+import java.util.List;
+import java.util.Set;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -15,6 +14,7 @@ public class RedisService {
     public static final String URL = "-URL";
     public static final String TIMESTAMP = "-TIMESTAMP";
     public static final String REGION = "-REGION";
+    public static final String TEST_KEY = "testKey";
 
     private Jedis redisClient;
 
@@ -23,7 +23,7 @@ public class RedisService {
     }
 
     public boolean healthCheck(){
-        String operation = redisClient.set("testKey", "testValue");
+        String operation = redisClient.set(TEST_KEY, "testValue");
         return !operation.isEmpty() && !operation.isBlank();
     }
 
@@ -52,11 +52,17 @@ public class RedisService {
     public void putURL(String uuid, String value){
         this.putValue(uuid+URL, value);
     }
+
     public void putTimestamp(String uuid, String value){
         this.putValue(uuid+TIMESTAMP, value);
     }
+
     public void putRegion(String uuid, String value){
         this.putValue(uuid+REGION, value);
+    }
+
+    public String getValue(String key){
+        return this.redisClient.get(key);
     }
 
     public Set<String> getKeys(String keys){
@@ -65,25 +71,5 @@ public class RedisService {
 
     public List<String> getValues(Stream<String> keys){
         return keys.map(key -> this.redisClient.get(key)).collect(Collectors.toList());
-    }
-
-    public Map.Entry<String, Integer> findMostCalledURLAndCount() throws NoDataFoundException{
-        // Get all keys for URL pattern
-        Stream<String> keys = getKeys("*"+URL).stream().sorted();
-        List<String> values = getValues(keys);
-
-        if(CollectionUtils.isEmpty(values))
-            throw new NoDataFoundException(NoDataFoundException.NO_DATA_FOUND);
-
-        HashMap<String, Integer> counts = new HashMap<>();
-
-        // Counts and creates a hashmap with the count
-        values.stream().distinct().forEach(s -> {
-            counts.put(s, (int) values.stream().filter(filter -> filter.equals(s)).count());
-        });
-
-        //TODO: improve this code for better performance
-
-        return counts.entrySet().stream().sorted(Map.Entry.comparingByValue(Comparator.reverseOrder())).findFirst().get();
     }
 }

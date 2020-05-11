@@ -1,16 +1,15 @@
 package com.log.analytics.api.v1;
 
 import com.log.analytics.com.log.analytics.entity.Log;
-import com.log.analytics.enums.RegionEnum;
+import com.log.analytics.com.log.analytics.entity.Metrics;
 import com.log.analytics.exceptions.InvalidIngestionInputException;
 import com.log.analytics.exceptions.NoDataFoundException;
-import com.log.analytics.service.RedisService;
+import com.log.analytics.service.LogsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.util.CollectionUtils;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
@@ -22,11 +21,11 @@ public class IngestController {
     private static final String ERROR_APP_IS_DOWN = "Error! App is down";
 
     @Autowired
-    private RedisService redisService;
+    private LogsService logService;
 
     @GetMapping("/healthCheck")
     public ResponseEntity healthCheck() {
-        if(redisService.healthCheck())
+        if(logService.healthCheck())
             return ResponseEntity.ok().build();
 
         return ResponseEntity.badRequest().body(ERROR_APP_IS_DOWN);
@@ -37,17 +36,15 @@ public class IngestController {
 
 
     @GetMapping("/metrics")
-    public ResponseEntity<List<String>> getMetrics() {
-        List<String> ret = new ArrayList<>();
+    public ResponseEntity<Metrics> getMetrics() {
         try {
-            Map.Entry<String, Integer> mostCalledURL = redisService.findMostCalledURLAndCount();
-            ret.add("Most called URL is: " + mostCalledURL.getKey() + ". And the count is: " + mostCalledURL.getValue());
+            Map.Entry<String, Integer> mostCalledURL = logService.findMostCalledURLAndCount();
+
+            Metrics ret = new Metrics().setMostCalledURL(mostCalledURL.getKey()).setMostCalledURLCount(mostCalledURL.getValue());
 
             return ResponseEntity.ok(ret);
         }catch(NoDataFoundException nex){
-
-            ret.add(NoDataFoundException.NO_DATA_FOUND);
-            return ResponseEntity.badRequest().body(ret);
+            return ResponseEntity.badRequest().build();
         }
     }
 
@@ -56,13 +53,9 @@ public class IngestController {
         try {
             checkIngestionInput(json);
 
-            json.forEach(log -> {
-                redisService.putURL(log.getUUID().toString(), log.getURL());
-                redisService.putTimestamp(log.getUUID().toString(), String.valueOf(log.getTimestamp()));
-                redisService.putRegion(log.getUUID().toString(), log.getRegion().toString());
-            });
+            logService.ingestLogs(json);
 
-            return ResponseEntity.ok(json.size() +" items succesfully parsed");
+            return ResponseEntity.ok("Items ingested succesfully");
         }catch(InvalidIngestionInputException iex){
             return ResponseEntity.badRequest().body(iex.getMessage());
         }

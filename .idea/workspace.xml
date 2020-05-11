@@ -20,22 +20,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c3e68198-abfb-4fd0-9718-8513ced53fa7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/LogService.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/log/analytics/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/log/analytics/api/v1/IngestController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/log/analytics/exceptions/InvalidIngestionInputException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/log/analytics/exceptions/NoDataFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/log/analytics/AppConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/log/analytics/com/log/analytics/entity/Metrics.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/log/analytics/service/LogsService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/log/analytics/api/v1/IngestService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/log/analytics/com/log/analytics/entity/Log.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/log/analytics/com/log/analytics/entity/Log.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/log/analytics/api/v1/IngestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/log/analytics/api/v1/IngestController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/log/analytics/service/RedisService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/log/analytics/service/RedisService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/DatabaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/DatabaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/log/analytics/api/v1/IngestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/log/analytics/api/v1/IngestController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/log/analytics/service/RedisService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/log/analytics/service/RedisService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/DatabaseTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/DatabaseTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +82,7 @@
       <recent name="$PROJECT_DIR$/web/WEB-INF" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.DEV">
+  <component name="RunManager" selected="JUnit.DatabaseTest">
     <configuration name="DEV" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="com.log.analytics.Application" />
       <module name="LogService" />
@@ -160,9 +154,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="DatabaseTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LogService" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="DatabaseTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.DEV" />
+      <item itemvalue="JUnit.DatabaseTest" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.DatabaseTest" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -196,50 +205,54 @@
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
     <state x="1784" y="197" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.312.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1589212194721" />
-    <state x="2134" y="226" width="374" height="626" key="#com.intellij.ide.util.MemberChooser" timestamp="1589214909236">
+    <state x="2134" y="226" width="374" height="626" key="#com.intellij.ide.util.MemberChooser" timestamp="1589222954165">
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
-    <state x="2134" y="226" width="374" height="626" key="#com.intellij.ide.util.MemberChooser/0.312.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1589214909236" />
+    <state x="2134" y="226" width="374" height="626" key="#com.intellij.ide.util.MemberChooser/0.312.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1589222954165" />
     <state x="2058" y="331" width="525" height="416" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1589212158270">
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
     <state x="2058" y="331" width="525" height="416" key="#com.intellij.ide.util.TreeClassChooserDialog/0.312.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1589212158270" />
+    <state x="1833" y="0" width="965" height="1080" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1589223401481">
+      <screen x="1366" y="0" width="1920" height="1080" />
+    </state>
+    <state x="1833" y="0" width="965" height="1080" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.312.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1589223401481" />
     <state x="1893" y="123" width="735" height="484" key="FileChooserDialogImpl" timestamp="1589208862263">
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
     <state x="1893" y="123" width="735" height="484" key="FileChooserDialogImpl/0.312.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1589208862263" />
-    <state width="1874" height="354" key="GridCell.Tab.0.bottom" timestamp="1589220671668">
+    <state width="1874" height="287" key="GridCell.Tab.0.bottom" timestamp="1589224354966">
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
-    <state width="1874" height="354" key="GridCell.Tab.0.bottom/0.312.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1589220671668" />
-    <state width="1874" height="354" key="GridCell.Tab.0.center" timestamp="1589220671668">
+    <state width="1874" height="287" key="GridCell.Tab.0.bottom/0.312.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1589224354966" />
+    <state width="1874" height="287" key="GridCell.Tab.0.center" timestamp="1589224354965">
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
-    <state width="1874" height="354" key="GridCell.Tab.0.center/0.312.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1589220671668" />
-    <state width="1874" height="354" key="GridCell.Tab.0.left" timestamp="1589220671668">
+    <state width="1874" height="287" key="GridCell.Tab.0.center/0.312.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1589224354965" />
+    <state width="1874" height="287" key="GridCell.Tab.0.left" timestamp="1589224354965">
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
-    <state width="1874" height="354" key="GridCell.Tab.0.left/0.312.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1589220671668" />
-    <state width="1874" height="354" key="GridCell.Tab.0.right" timestamp="1589220671668">
+    <state width="1874" height="287" key="GridCell.Tab.0.left/0.312.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1589224354965" />
+    <state width="1874" height="287" key="GridCell.Tab.0.right" timestamp="1589224354965">
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
-    <state width="1874" height="354" key="GridCell.Tab.0.right/0.312.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1589220671668" />
-    <state width="1874" height="354" key="GridCell.Tab.1.bottom" timestamp="1589220677776">
+    <state width="1874" height="287" key="GridCell.Tab.0.right/0.312.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1589224354965" />
+    <state width="1874" height="354" key="GridCell.Tab.1.bottom" timestamp="1589223088333">
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
-    <state width="1874" height="354" key="GridCell.Tab.1.bottom/0.312.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1589220677776" />
-    <state width="1874" height="354" key="GridCell.Tab.1.center" timestamp="1589220677776">
+    <state width="1874" height="354" key="GridCell.Tab.1.bottom/0.312.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1589223088333" />
+    <state width="1874" height="354" key="GridCell.Tab.1.center" timestamp="1589223088333">
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
-    <state width="1874" height="354" key="GridCell.Tab.1.center/0.312.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1589220677776" />
-    <state width="1874" height="354" key="GridCell.Tab.1.left" timestamp="1589220677776">
+    <state width="1874" height="354" key="GridCell.Tab.1.center/0.312.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1589223088333" />
+    <state width="1874" height="354" key="GridCell.Tab.1.left" timestamp="1589223088333">
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
-    <state width="1874" height="354" key="GridCell.Tab.1.left/0.312.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1589220677776" />
-    <state width="1874" height="354" key="GridCell.Tab.1.right" timestamp="1589220677776">
+    <state width="1874" height="354" key="GridCell.Tab.1.left/0.312.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1589223088333" />
+    <state width="1874" height="354" key="GridCell.Tab.1.right" timestamp="1589223088333">
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
-    <state width="1874" height="354" key="GridCell.Tab.1.right/0.312.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1589220677776" />
+    <state width="1874" height="354" key="GridCell.Tab.1.right/0.312.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1589223088333" />
     <state x="1599" y="0" width="1024" height="845" key="SettingsEditor" timestamp="1589208904136">
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
@@ -267,8 +280,8 @@
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/log/analytics/service/RedisService.java</url>
-          <line>71</line>
+          <url>file://$PROJECT_DIR$/src/main/java/com/log/analytics/service/LogsService.java</url>
+          <line>31</line>
           <option name="timeStamp" value="11" />
         </line-breakpoint>
       </breakpoints>
