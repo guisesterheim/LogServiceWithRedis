@@ -3,12 +3,13 @@ package com.log.analytics.com.log.analytics.entity;
 import com.log.analytics.enums.RegionEnum;
 
 import java.util.Date;
+import java.util.UUID;
 
-public class Log {import main.analytics.com.log.analytics.enums.RegionEnum;
+public class Log {
 
     private String URL;
-    private Date timestamp;
-    private String userUUID;
+    private long timestamp;
+    private UUID uuid;
     private RegionEnum region;
 
     public String getURL() {
@@ -19,20 +20,20 @@ public class Log {import main.analytics.com.log.analytics.enums.RegionEnum;
         this.URL = URL;
     }
 
-    public Date getTimestamp() {
+    public long getTimestamp() {
         return timestamp;
     }
 
-    public void setTimestamp(Date timestamp) {
+    public void setTimestamp(long timestamp) {
         this.timestamp = timestamp;
     }
 
-    public String getUserUUID() {
-        return userUUID;
+    public UUID getUUID() {
+        return uuid;
     }
 
-    public void setUserUUID(String userUUID) {
-        this.userUUID = userUUID;
+    public void setUUID(UUID uuid) {
+        this.uuid = uuid;
     }
 
     public RegionEnum getRegion() {
@@ -41,5 +42,9 @@ public class Log {import main.analytics.com.log.analytics.enums.RegionEnum;
 
     public void setRegion(RegionEnum region) {
         this.region = region;
+    }
+
+    public Date getTimeStampAsDate(){
+        return new Date(this.timestamp);
     }
 }

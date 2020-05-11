@@ -1,7 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="c3e68198-abfb-4fd0-9718-8513ced53fa7" name="Default Changelist" comment="" />
+    <list default="true" id="c3e68198-abfb-4fd0-9718-8513ced53fa7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/LogService.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/log/analytics/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/log/analytics/api/v1/IngestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/log/analytics/exceptions/InvalidIngestionInputException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/log/analytics/exceptions/NoDataFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/log/analytics/api/v1/IngestService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/log/analytics/com/log/analytics/entity/Log.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/log/analytics/com/log/analytics/entity/Log.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/log/analytics/service/RedisService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/log/analytics/service/RedisService.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,25 +50,228 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
   <component name="ProjectId" id="1blSu5bsZt20sxoJtroZqVPkMhm" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.applicationServers" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.log.analytics.exceptions" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/web/WEB-INF" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.DEV">
+    <configuration name="DEV" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.log.analytics.Application" />
+      <module name="LogService" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GlassFish 5.0.1" type="GlassfishConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="GlassFish 5.0.1" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment />
+      <server-settings>
+        <option name="DOMAIN" value="" />
+        <option name="PRESERVE" value="false" />
+        <option name="COMPATIBILITY" value="false" />
+        <option name="VIRTUAL_SERVER" />
+        <option name="USERNAME" value="admin" />
+        <option name="CREDENTIAL_ALIAS" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="GlassFish" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="9009" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.DEV" />
+    </list>
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
-    <state x="166" y="312" width="1024" height="768" key="SettingsEditor" timestamp="1589205551235">
-      <screen x="0" y="312" width="1366" height="768" />
+    <state x="2109" y="347" width="424" height="384" key="#BuildArtifactsBeforeRunChooser" timestamp="1589208721431">
+      <screen x="1366" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2109" y="347" width="424" height="384" key="#BuildArtifactsBeforeRunChooser/0.312.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1589208721431" />
+    <state x="1872" y="272" width="466" height="185" key="#Glassfish_Server" timestamp="1589208481348">
+      <screen x="1366" y="0" width="1920" height="1080" />
+    </state>
+    <state x="1872" y="272" width="466" height="185" key="#Glassfish_Server/0.312.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1589208481348" />
+    <state x="1784" y="197" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589212194721">
+      <screen x="1366" y="0" width="1920" height="1080" />
+    </state>
+    <state x="1784" y="197" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.312.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1589212194721" />
+    <state x="2134" y="226" width="374" height="626" key="#com.intellij.ide.util.MemberChooser" timestamp="1589214909236">
+      <screen x="1366" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2134" y="226" width="374" height="626" key="#com.intellij.ide.util.MemberChooser/0.312.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1589214909236" />
+    <state x="2058" y="331" width="525" height="416" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1589212158270">
+      <screen x="1366" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2058" y="331" width="525" height="416" key="#com.intellij.ide.util.TreeClassChooserDialog/0.312.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1589212158270" />
+    <state x="1893" y="123" width="735" height="484" key="FileChooserDialogImpl" timestamp="1589208862263">
+      <screen x="1366" y="0" width="1920" height="1080" />
+    </state>
+    <state x="1893" y="123" width="735" height="484" key="FileChooserDialogImpl/0.312.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1589208862263" />
+    <state width="1874" height="354" key="GridCell.Tab.0.bottom" timestamp="1589220671668">
+      <screen x="1366" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1874" height="354" key="GridCell.Tab.0.bottom/0.312.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1589220671668" />
+    <state width="1874" height="354" key="GridCell.Tab.0.center" timestamp="1589220671668">
+      <screen x="1366" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1874" height="354" key="GridCell.Tab.0.center/0.312.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1589220671668" />
+    <state width="1874" height="354" key="GridCell.Tab.0.left" timestamp="1589220671668">
+      <screen x="1366" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1874" height="354" key="GridCell.Tab.0.left/0.312.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1589220671668" />
+    <state width="1874" height="354" key="GridCell.Tab.0.right" timestamp="1589220671668">
+      <screen x="1366" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1874" height="354" key="GridCell.Tab.0.right/0.312.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1589220671668" />
+    <state width="1874" height="354" key="GridCell.Tab.1.bottom" timestamp="1589220677776">
+      <screen x="1366" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1874" height="354" key="GridCell.Tab.1.bottom/0.312.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1589220677776" />
+    <state width="1874" height="354" key="GridCell.Tab.1.center" timestamp="1589220677776">
+      <screen x="1366" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1874" height="354" key="GridCell.Tab.1.center/0.312.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1589220677776" />
+    <state width="1874" height="354" key="GridCell.Tab.1.left" timestamp="1589220677776">
+      <screen x="1366" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1874" height="354" key="GridCell.Tab.1.left/0.312.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1589220677776" />
+    <state width="1874" height="354" key="GridCell.Tab.1.right" timestamp="1589220677776">
+      <screen x="1366" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1874" height="354" key="GridCell.Tab.1.right/0.312.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1589220677776" />
+    <state x="1599" y="0" width="1024" height="845" key="SettingsEditor" timestamp="1589208904136">
+      <screen x="1366" y="0" width="1920" height="1080" />
     </state>
     <state x="166" y="312" width="1024" height="768" key="SettingsEditor/0.312.1366.768/1366.0.1920.1080@0.312.1366.768" timestamp="1589205551235" />
+    <state x="1599" y="0" width="1024" height="845" key="SettingsEditor/0.312.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1589208904136" />
+    <state x="1783" y="316" width="646" height="213" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1589208903449">
+      <screen x="1366" y="0" width="1920" height="1080" />
+    </state>
+    <state x="1783" y="316" width="646" height="213" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.312.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1589208903449" />
+    <state x="2094" y="459" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1589213540318">
+      <screen x="1366" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2094" y="459" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.312.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1589213540318" />
+    <state x="1635" y="230" width="1372" height="618" key="new project wizard" timestamp="1589209053747">
+      <screen x="1366" y="0" width="1920" height="1080" />
+    </state>
+    <state x="1635" y="230" width="1372" height="618" key="new project wizard/0.312.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1589209053747" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/log/analytics/api/v1/IngestController.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/log/analytics/service/RedisService.java</url>
+          <line>71</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
