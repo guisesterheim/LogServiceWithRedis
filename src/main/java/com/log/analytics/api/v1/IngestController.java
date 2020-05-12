@@ -3,6 +3,7 @@ package com.log.analytics.api.v1;
 import com.log.analytics.com.log.analytics.entity.Log;
 import com.log.analytics.com.log.analytics.entity.Metrics;
 import com.log.analytics.com.log.analytics.entity.SingleMetric;
+import com.log.analytics.enums.RegionEnum;
 import com.log.analytics.exceptions.InvalidIngestionInputException;
 import com.log.analytics.exceptions.NoDataFoundException;
 import com.log.analytics.service.LogsService;
@@ -44,8 +45,10 @@ public class IngestController {
             ret.setMostAccessedURLsWorldwide(logService.findMostURLsAccessed());
             ret.setLessAccessedURLWorldWide(logService.findLeastURLAccessed());
             ret.setMostAccessedMinute(logService.findMostAccessedPerMinute());
-
-            logService.findMostURLsAccessedPerRegion();
+            ret.setTopThreeAccessPerDay(logService.findMostAccessedPerDay());
+            ret.setTopThreeAccessPerWeek(logService.findMostAccessedPerWeek());
+            ret.setTopThreeAccessPerYear(logService.findMostAccessedPerYear());
+            ret.setMostAccessedURLPerRegion(logService.findMostURLsAccessedPerRegion(RegionEnum.USWEST2));
 
             return ResponseEntity.ok(ret);
         }catch(NoDataFoundException nex){

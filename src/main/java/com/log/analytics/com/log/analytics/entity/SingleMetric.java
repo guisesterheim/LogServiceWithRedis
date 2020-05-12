@@ -1,25 +1,37 @@
 package com.log.analytics.com.log.analytics.entity;
 
+import com.log.analytics.enums.RegionEnum;
+
 public class SingleMetric {
 
-    private int mostCalledURLCount;
-    private String mostCalledURL;
+    private int count;
+    private String key;
+    private RegionEnum region;
 
-    public int getMostCalledURLCount() {
-        return mostCalledURLCount;
+    public int getCount() {
+        return count;
     }
 
-    public SingleMetric setMostCalledURLCount(int mostCalledURLCount) {
-        this.mostCalledURLCount = mostCalledURLCount;
+    public SingleMetric setCount(int count) {
+        this.count = count;
         return this;
     }
 
-    public String getMostCalledURL() {
-        return mostCalledURL;
+    public String getKey() {
+        return key;
     }
 
-    public SingleMetric setMostCalledURL(String mostCalledURL) {
-        this.mostCalledURL = mostCalledURL;
+    public SingleMetric setKey(String key) {
+        this.key = key;
         return this;
+    }
+
+    public SingleMetric setRegion(RegionEnum region){
+        this.region = region;
+        return this;
+    }
+
+    public RegionEnum getRegion() {
+        return region;
     }
 }
