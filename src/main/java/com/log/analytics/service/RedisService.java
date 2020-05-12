@@ -11,9 +11,6 @@ import java.util.stream.Stream;
 @Service
 public class RedisService {
 
-    public static final String URL = "-URL";
-    public static final String TIMESTAMP = "-TIMESTAMP";
-    public static final String REGION = "-REGION";
     public static final String TEST_KEY = "testKey";
 
     private Jedis redisClient;
@@ -45,20 +42,8 @@ public class RedisService {
         this.redisClient.save();
     }
 
-    private void putValue(String key, String value){
-        this.redisClient.set(key, value);
-    }
-
-    public void putURL(String uuid, String value){
-        this.putValue(uuid+URL, value);
-    }
-
-    public void putTimestamp(String uuid, String value){
-        this.putValue(uuid+TIMESTAMP, value);
-    }
-
-    public void putRegion(String uuid, String value){
-        this.putValue(uuid+REGION, value);
+    public void putValue(String uuid, String timestamp, String region, String value){
+        this.redisClient.set(uuid+"|"+timestamp+"|"+region, value);
     }
 
     public String getValue(String key){

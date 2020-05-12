@@ -20,14 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c3e68198-abfb-4fd0-9718-8513ced53fa7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/log/analytics/com/log/analytics/entity/SingleMetric.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/log/analytics/api/v1/IngestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/log/analytics/api/v1/IngestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/log/analytics/com/log/analytics/entity/Metrics.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/log/analytics/com/log/analytics/entity/Metrics.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/log/analytics/service/LogsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/log/analytics/service/LogsService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/log/analytics/api/v1/IngestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/log/analytics/api/v1/IngestController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/log/analytics/com/log/analytics/entity/Metrics.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/log/analytics/com/log/analytics/entity/Metrics.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/log/analytics/service/LogsService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/log/analytics/service/LogsService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/log/analytics/service/RedisService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/log/analytics/service/RedisService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,6 +62,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
@@ -219,38 +216,38 @@
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
     <state x="1893" y="123" width="735" height="484" key="FileChooserDialogImpl/0.312.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1589208862263" />
-    <state width="1874" height="354" key="GridCell.Tab.0.bottom" timestamp="1589248234675">
+    <state width="1874" height="354" key="GridCell.Tab.0.bottom" timestamp="1589290041760">
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
-    <state width="1874" height="354" key="GridCell.Tab.0.bottom/0.312.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1589248234675" />
-    <state width="1874" height="354" key="GridCell.Tab.0.center" timestamp="1589248234675">
+    <state width="1874" height="354" key="GridCell.Tab.0.bottom/0.312.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1589290041760" />
+    <state width="1874" height="354" key="GridCell.Tab.0.center" timestamp="1589290041760">
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
-    <state width="1874" height="354" key="GridCell.Tab.0.center/0.312.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1589248234675" />
-    <state width="1874" height="354" key="GridCell.Tab.0.left" timestamp="1589248234675">
+    <state width="1874" height="354" key="GridCell.Tab.0.center/0.312.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1589290041760" />
+    <state width="1874" height="354" key="GridCell.Tab.0.left" timestamp="1589290041759">
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
-    <state width="1874" height="354" key="GridCell.Tab.0.left/0.312.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1589248234675" />
-    <state width="1874" height="354" key="GridCell.Tab.0.right" timestamp="1589248234675">
+    <state width="1874" height="354" key="GridCell.Tab.0.left/0.312.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1589290041759" />
+    <state width="1874" height="354" key="GridCell.Tab.0.right" timestamp="1589290041760">
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
-    <state width="1874" height="354" key="GridCell.Tab.0.right/0.312.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1589248234675" />
-    <state width="1874" height="354" key="GridCell.Tab.1.bottom" timestamp="1589248239745">
+    <state width="1874" height="354" key="GridCell.Tab.0.right/0.312.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1589290041760" />
+    <state width="1874" height="354" key="GridCell.Tab.1.bottom" timestamp="1589290052428">
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
-    <state width="1874" height="354" key="GridCell.Tab.1.bottom/0.312.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1589248239745" />
-    <state width="1874" height="354" key="GridCell.Tab.1.center" timestamp="1589248239745">
+    <state width="1874" height="354" key="GridCell.Tab.1.bottom/0.312.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1589290052428" />
+    <state width="1874" height="354" key="GridCell.Tab.1.center" timestamp="1589290052427">
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
-    <state width="1874" height="354" key="GridCell.Tab.1.center/0.312.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1589248239745" />
-    <state width="1874" height="354" key="GridCell.Tab.1.left" timestamp="1589248239745">
+    <state width="1874" height="354" key="GridCell.Tab.1.center/0.312.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1589290052427" />
+    <state width="1874" height="354" key="GridCell.Tab.1.left" timestamp="1589290052427">
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
-    <state width="1874" height="354" key="GridCell.Tab.1.left/0.312.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1589248239745" />
-    <state width="1874" height="354" key="GridCell.Tab.1.right" timestamp="1589248239745">
+    <state width="1874" height="354" key="GridCell.Tab.1.left/0.312.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1589290052427" />
+    <state width="1874" height="354" key="GridCell.Tab.1.right" timestamp="1589290052427">
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
-    <state width="1874" height="354" key="GridCell.Tab.1.right/0.312.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1589248239745" />
+    <state width="1874" height="354" key="GridCell.Tab.1.right/0.312.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1589290052427" />
     <state x="1599" y="0" width="1024" height="845" key="SettingsEditor" timestamp="1589208904136">
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
@@ -260,14 +257,26 @@
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
     <state x="1783" y="316" width="646" height="213" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.312.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1589208903449" />
-    <state x="2094" y="459" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1589242540883">
+    <state x="2094" y="459" width="454" height="160" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1589290002881">
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
-    <state x="2094" y="459" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.312.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1589242540883" />
+    <state x="2094" y="459" width="454" height="160" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.312.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1589290002881" />
+    <state x="2059" y="298" width="524" height="481" key="extract.method.dialog" timestamp="1589293740286">
+      <screen x="1366" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2059" y="298" width="524" height="481" key="extract.method.dialog/0.312.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1589293740286" />
+    <state x="1971" y="278" width="710" height="522" key="find.popup" timestamp="1589289931338">
+      <screen x="1366" y="0" width="1920" height="1080" />
+    </state>
+    <state x="1971" y="278" width="710" height="522" key="find.popup/0.312.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1589289931338" />
     <state x="1635" y="230" width="1372" height="618" key="new project wizard" timestamp="1589209053747">
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
     <state x="1635" y="230" width="1372" height="618" key="new project wizard/0.312.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1589209053747" />
+    <state x="1989" y="237" key="search.everywhere.popup" timestamp="1589290737793">
+      <screen x="1366" y="0" width="1920" height="1080" />
+    </state>
+    <state x="1989" y="237" key="search.everywhere.popup/0.312.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1589290737793" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -276,11 +285,6 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/log/analytics/api/v1/IngestController.java</url>
           <line>33</line>
           <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/log/analytics/service/LogsService.java</url>
-          <line>81</line>
-          <option name="timeStamp" value="16" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

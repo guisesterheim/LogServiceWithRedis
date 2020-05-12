@@ -43,7 +43,7 @@ public class IngestController {
             Metrics ret = new Metrics();
             ret.setMostAccessedURLsWorldwide(logService.findMostURLsAccessed());
             ret.setLessAccessedURLWorldWide(logService.findLeastURLAccessed());
-            ret.setMostAccessedMinute(logService.findMostAccessedMinute());
+            ret.setMostAccessedMinute(logService.findMostAccessedPerMinute());
 
             logService.findMostURLsAccessedPerRegion();
 
