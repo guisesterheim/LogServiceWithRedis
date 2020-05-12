@@ -1,25 +1,34 @@
 package com.log.analytics.com.log.analytics.entity;
 
+import java.util.List;
+
 public class Metrics {
 
-    private int mostCalledURLCount;
-    private String mostCalledURL;
+    List<SingleMetric> mostAccessedURLsWorldwide;
+    SingleMetric lessAccessedURLWorldWide;
+    int mostAccessedMinute;
 
-    public int getMostCalledURLCount() {
-        return mostCalledURLCount;
+    public List<SingleMetric> getMostAccessedURLsWorldwide() {
+        return mostAccessedURLsWorldwide;
     }
 
-    public Metrics setMostCalledURLCount(int mostCalledURLCount) {
-        this.mostCalledURLCount = mostCalledURLCount;
-        return this;
+    public void setMostAccessedURLsWorldwide(List<SingleMetric> mostAccessedURLsWorldwide) {
+        this.mostAccessedURLsWorldwide = mostAccessedURLsWorldwide;
     }
 
-    public String getMostCalledURL() {
-        return mostCalledURL;
+    public SingleMetric getLessAccessedURLWorldWide() {
+        return lessAccessedURLWorldWide;
     }
 
-    public Metrics setMostCalledURL(String mostCalledURL) {
-        this.mostCalledURL = mostCalledURL;
-        return this;
+    public void setLessAccessedURLWorldWide(SingleMetric lessAccessedURLWorldWide) {
+        this.lessAccessedURLWorldWide = lessAccessedURLWorldWide;
+    }
+
+    public int getMostAccessedMinute() {
+        return mostAccessedMinute;
+    }
+
+    public void setMostAccessedMinute(int mostAccessedMinute) {
+        this.mostAccessedMinute = mostAccessedMinute;
     }
 }

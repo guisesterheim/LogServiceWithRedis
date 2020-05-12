@@ -2,6 +2,7 @@ package com.log.analytics.api.v1;
 
 import com.log.analytics.com.log.analytics.entity.Log;
 import com.log.analytics.com.log.analytics.entity.Metrics;
+import com.log.analytics.com.log.analytics.entity.SingleMetric;
 import com.log.analytics.exceptions.InvalidIngestionInputException;
 import com.log.analytics.exceptions.NoDataFoundException;
 import com.log.analytics.service.LogsService;
@@ -12,6 +13,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping("/api/v1/laa")
@@ -38,9 +40,12 @@ public class IngestController {
     @GetMapping("/metrics")
     public ResponseEntity<Metrics> getMetrics() {
         try {
-            Map.Entry<String, Integer> mostCalledURL = logService.findMostCalledURLAndCount();
+            Metrics ret = new Metrics();
+            ret.setMostAccessedURLsWorldwide(logService.findMostURLsAccessed());
+            ret.setLessAccessedURLWorldWide(logService.findLeastURLAccessed());
+            ret.setMostAccessedMinute(logService.findMostAccessedMinute());
 
-            Metrics ret = new Metrics().setMostCalledURL(mostCalledURL.getKey()).setMostCalledURLCount(mostCalledURL.getValue());
+            logService.findMostURLsAccessedPerRegion();
 
             return ResponseEntity.ok(ret);
         }catch(NoDataFoundException nex){
