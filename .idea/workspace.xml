@@ -20,8 +20,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c3e68198-abfb-4fd0-9718-8513ced53fa7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application-dev.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application-prod.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/log/analytics/api/v1/IngestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/log/analytics/api/v1/IngestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ansible_startup/roles/web/tasks/install_java.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ansible_startup/roles/web/tasks/install_java.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ansible_startup/roles/web/tasks/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ansible_startup/roles/web/tasks/main.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ansible_startup/site.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ansible_startup/site.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/log/analytics/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/log/analytics/AppConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/log/analytics/service/RedisService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/log/analytics/service/RedisService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/DatabaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/DatabaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/log/analytics/AppConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/log/analytics/AppConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/log/analytics/api/v1/IngestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/log/analytics/api/v1/IngestController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/log/analytics/service/LogsService$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/log/analytics/service/LogsService$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/log/analytics/service/LogsService$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/log/analytics/service/LogsService$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/log/analytics/service/LogsService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/log/analytics/service/LogsService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/log/analytics/service/RedisService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/log/analytics/service/RedisService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,24 +76,35 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="extract.method.default.visibility" value="private" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/config" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.applicationServers" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/config" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.log.analytics.exceptions" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+      <recent name="$PROJECT_DIR$/config" />
       <recent name="$PROJECT_DIR$/web/WEB-INF" />
     </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn install" />
+    </option>
   </component>
   <component name="RunManager" selected="Application.DEV">
     <configuration name="DEV" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="com.log.analytics.Application" />
       <module name="LogService" />
+      <option name="VM_PARAMETERS" value="-Dspring.profiles.active=dev" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -194,10 +220,10 @@
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
     <state x="1872" y="272" width="466" height="185" key="#Glassfish_Server/0.312.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1589208481348" />
-    <state x="1784" y="197" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589212194721">
+    <state x="1784" y="197" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589324919505">
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
-    <state x="1784" y="197" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.312.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1589212194721" />
+    <state x="1784" y="197" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.312.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1589324919505" />
     <state x="2134" y="226" width="374" height="626" key="#com.intellij.ide.util.MemberChooser" timestamp="1589294619458">
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
@@ -214,22 +240,22 @@
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
     <state x="1893" y="123" width="735" height="484" key="FileChooserDialogImpl/0.312.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1589208862263" />
-    <state width="1874" height="354" key="GridCell.Tab.0.bottom" timestamp="1589299741861">
+    <state width="1874" height="287" key="GridCell.Tab.0.bottom" timestamp="1589326589103">
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
-    <state width="1874" height="354" key="GridCell.Tab.0.bottom/0.312.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1589299741861" />
-    <state width="1874" height="354" key="GridCell.Tab.0.center" timestamp="1589299741861">
+    <state width="1874" height="287" key="GridCell.Tab.0.bottom/0.312.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1589326589103" />
+    <state width="1874" height="287" key="GridCell.Tab.0.center" timestamp="1589326589102">
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
-    <state width="1874" height="354" key="GridCell.Tab.0.center/0.312.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1589299741861" />
-    <state width="1874" height="354" key="GridCell.Tab.0.left" timestamp="1589299741860">
+    <state width="1874" height="287" key="GridCell.Tab.0.center/0.312.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1589326589102" />
+    <state width="1874" height="287" key="GridCell.Tab.0.left" timestamp="1589326589102">
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
-    <state width="1874" height="354" key="GridCell.Tab.0.left/0.312.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1589299741860" />
-    <state width="1874" height="354" key="GridCell.Tab.0.right" timestamp="1589299741861">
+    <state width="1874" height="287" key="GridCell.Tab.0.left/0.312.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1589326589102" />
+    <state width="1874" height="287" key="GridCell.Tab.0.right" timestamp="1589326589102">
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
-    <state width="1874" height="354" key="GridCell.Tab.0.right/0.312.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1589299741861" />
+    <state width="1874" height="287" key="GridCell.Tab.0.right/0.312.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1589326589102" />
     <state width="1874" height="354" key="GridCell.Tab.1.bottom" timestamp="1589299741861">
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
@@ -271,6 +297,10 @@
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
     <state x="1635" y="230" width="1372" height="618" key="new project wizard/0.312.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1589209053747" />
+    <state x="1990" y="246" width="672" height="677" key="run.anything.popup" timestamp="1589326605722">
+      <screen x="1366" y="0" width="1920" height="1080" />
+    </state>
+    <state x="1990" y="246" width="672" height="677" key="run.anything.popup/0.312.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1589326605722" />
     <state x="1989" y="237" width="672" height="678" key="search.everywhere.popup" timestamp="1589294213069">
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>

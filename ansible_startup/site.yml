@@ -1,13 +1,13 @@
 ---
 # This playbook deploys the whole application stack in this site.
 
-- name: apply common configuration to all nodes
+- name: apply common configuration
   become: true
   hosts: localhost
   roles:
     - common
 
-- name: configure, deploy and run the go microservice
+- name: configure, deploy and run the java microservice
   become: true
   hosts: localhost
   roles:

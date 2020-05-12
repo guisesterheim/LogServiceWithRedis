@@ -1,11 +1,11 @@
 FROM adoptopenjdk/openjdk11
 
-RUN mkdir /app
+VOLUME /tmp
 
-WORKDIR /app
+ADD target/LogAnalyticsService-*.jar application.jar
 
-COPY build/libs/log-service-*.jar /app/application.jar
+RUN bash -c 'touch /application.jar'
 
 EXPOSE 8080
 
-CMD ["java", "-jar", "-Xms512m", "-Xmx512m", "-Dspring.profiles.active=dev", "/app/application.jar"]
+ENTRYPOINT ["java", "-jar", "-Xms512m", "-Xmx512m", "-Dspring.profiles.active=prod", "/application.jar"]

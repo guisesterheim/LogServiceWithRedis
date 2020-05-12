@@ -1,5 +1,9 @@
 package com.log.analytics.service;
 
+import com.log.analytics.AppConfig;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Service;
 import redis.clients.jedis.Jedis;
 
@@ -11,11 +15,15 @@ import java.util.stream.Stream;
 @Service
 public class RedisService {
 
+    public String redisHostname;
+
     public static final String TEST_KEY = "testKey";
 
     private Jedis redisClient;
 
-    public RedisService(){
+    @Autowired
+    public RedisService(@Value("${config.redis.hostname}") String hostname){
+        this.redisHostname = hostname;
         init();
     }
 
@@ -25,8 +33,9 @@ public class RedisService {
     }
 
     public void init(){
-        this.redisClient = new Jedis("localhost", 6379);
+        this.redisClient = new Jedis(this.redisHostname, 6379);
 
+        System.out.println("hostname: "+this.redisHostname);
         System.out.println(this.redisClient.isConnected());
 
         /*
