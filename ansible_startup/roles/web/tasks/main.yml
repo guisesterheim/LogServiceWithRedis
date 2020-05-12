@@ -1,0 +1,4 @@
+---
+- include: install_goLang.yml
+- include: copy_code.yml
+- include: run_app.yml

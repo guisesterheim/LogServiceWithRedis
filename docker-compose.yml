@@ -1,0 +1,25 @@
+version: '2'
+
+networks:
+    app-tier:
+        driver: bridge
+
+services:
+    etcd:
+        container_name: "redis_javaMicroservice"
+        image: 'redis:latest'
+        ports:
+            - 6379:6379
+            - 16379:16379
+        networks:
+            - app-tier
+    myapp:
+        container_name: "javaApp"
+        build: .
+        command: ["java", "-jar", "-Xms512m", "-Xmx512m", "-Dspring.profiles.active=dev", "/app/application.jar"]
+        ports:
+            - "8080:8080"
+        volumes:
+            - .:/app
+        networks:
+            - app-tier

@@ -1,0 +1,5 @@
+---
+# These tasks install goLang
+- name: Install goLang
+  yum: name=golang state=present
+  tags: goLang

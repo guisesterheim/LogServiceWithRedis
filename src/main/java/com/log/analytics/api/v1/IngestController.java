@@ -34,10 +34,6 @@ public class IngestController {
         return ResponseEntity.badRequest().body(ERROR_APP_IS_DOWN);
     }
 
-    // Check for dockerization = https://github.com/benweizhu/spring-redis-docker-example
-    // Command to start redis = sudo docker run -d --name redis -p 6379:6379 redis
-
-
     @GetMapping("/metrics")
     public ResponseEntity<Metrics> getMetrics() {
         try {
