@@ -36,7 +36,7 @@
 
 - name: Install container-selinux
   package: 
-    name: http://mirror.centos.org/centos/7/extras/x86_64/Packages/WALinuxAgent-2.2.32-1.el7.noarch.rpm
+    name: http://mirror.centos.org/centos/7/extras/x86_64/Packages/container-selinux-2.107-1.el7_6.noarch.rpm
     state: present
 
 - name: Install containerd separately (CentOS 8).
