@@ -5,7 +5,7 @@
   become: true
   hosts: localhost
   roles:
-    - geerlingguy.docker
+    - docker
 
 - name: configure, deploy and run the java microservice
   become: true
