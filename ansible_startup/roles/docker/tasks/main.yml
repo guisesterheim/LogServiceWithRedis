@@ -1,5 +1,5 @@
-# Ansible playbook AWS - install docker
 ---
+# Ansible playbook AWS - install docker
 - name: Update all packages
   yum:
   name: '*'
