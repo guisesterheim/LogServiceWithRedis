@@ -1,0 +1,4 @@
+---
+- name: Run App
+  become: yes  
+  shell: docker-compose -f {{ destination }}/docker-compose.yml up -d
