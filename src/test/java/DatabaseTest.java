@@ -23,10 +23,9 @@ public class DatabaseTest {
     @Test
     @Order(1)
     void shouldHaveConnectionWithRedis(){
-        /*
         assertAll(
                 () -> assertTrue(logsService.healthCheck(), "Could not connect or insert data on Redis"),
                 () -> assertNotNull((Object) this.redisService.getValue(RedisService.TEST_KEY), "Could not retrieve data from Redis")
-        );*/
+        );
     }
 }

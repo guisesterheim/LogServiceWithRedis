@@ -23,6 +23,14 @@
       <change afterPath="$PROJECT_DIR$/src/main/resources/application-dev.yml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/resources/application-prod.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vagrant/machines/AMIAWSArchTest/virtualbox/action_provision" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vagrant/machines/AMIAWSArchTest/virtualbox/action_set_name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vagrant/machines/AMIAWSArchTest/virtualbox/creator_uid" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vagrant/machines/AMIAWSArchTest/virtualbox/id" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vagrant/machines/AMIAWSArchTest/virtualbox/index_uuid" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vagrant/machines/AMIAWSArchTest/virtualbox/private_key" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vagrant/machines/AMIAWSArchTest/virtualbox/synced_folders" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vagrant/machines/AMIAWSArchTest/virtualbox/vagrant_cwd" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ansible_startup/roles/web/tasks/install_java.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ansible_startup/roles/web/tasks/install_java.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ansible_startup/roles/web/tasks/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ansible_startup/roles/web/tasks/main.yml" afterDir="false" />
@@ -240,22 +248,22 @@
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
     <state x="1893" y="123" width="735" height="484" key="FileChooserDialogImpl/0.312.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1589208862263" />
-    <state width="1874" height="287" key="GridCell.Tab.0.bottom" timestamp="1589326589103">
+    <state width="1874" height="287" key="GridCell.Tab.0.bottom" timestamp="1589396897199">
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
-    <state width="1874" height="287" key="GridCell.Tab.0.bottom/0.312.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1589326589103" />
-    <state width="1874" height="287" key="GridCell.Tab.0.center" timestamp="1589326589102">
+    <state width="1874" height="287" key="GridCell.Tab.0.bottom/0.312.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1589396897199" />
+    <state width="1874" height="287" key="GridCell.Tab.0.center" timestamp="1589396897199">
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
-    <state width="1874" height="287" key="GridCell.Tab.0.center/0.312.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1589326589102" />
-    <state width="1874" height="287" key="GridCell.Tab.0.left" timestamp="1589326589102">
+    <state width="1874" height="287" key="GridCell.Tab.0.center/0.312.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1589396897199" />
+    <state width="1874" height="287" key="GridCell.Tab.0.left" timestamp="1589396897199">
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
-    <state width="1874" height="287" key="GridCell.Tab.0.left/0.312.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1589326589102" />
-    <state width="1874" height="287" key="GridCell.Tab.0.right" timestamp="1589326589102">
+    <state width="1874" height="287" key="GridCell.Tab.0.left/0.312.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1589396897199" />
+    <state width="1874" height="287" key="GridCell.Tab.0.right" timestamp="1589396897199">
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
-    <state width="1874" height="287" key="GridCell.Tab.0.right/0.312.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1589326589102" />
+    <state width="1874" height="287" key="GridCell.Tab.0.right/0.312.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1589396897199" />
     <state width="1874" height="354" key="GridCell.Tab.1.bottom" timestamp="1589299741861">
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>

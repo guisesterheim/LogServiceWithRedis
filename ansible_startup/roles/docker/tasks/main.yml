@@ -32,7 +32,7 @@
     enabled: yes
 
 - name: Ensure Python pip packages are installed
-  pip:
+  yum:
     name: "{{ packages }}"
   vars:
     packages:
