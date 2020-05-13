@@ -1,6 +1,3 @@
 ---
 # These tasks are responsible for copying the latest dev/production code from
 # the version control system.
-
-- name: Copy the code from repository
-  git: repo={{ repository }} dest={{ destination }}
