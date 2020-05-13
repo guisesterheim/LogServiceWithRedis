@@ -1,4 +1,0 @@
----
-- include: install_java.yml
-- include: copy_code.yml
-- include: run_app.yml
