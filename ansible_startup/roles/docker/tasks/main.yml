@@ -2,17 +2,17 @@
 # Ansible playbook AWS - install docker
 - name: Update all packages
   yum:
-  name: '*'
-  state: latest
-  update_only: yes
+    name: '*'
+    state: latest
+    update_only: yes
 
 - name: Ensure a list of yum packages are installed
   yum:
-  name: "{{ packages }}"
-  state: latest
-  update_cache: yes
+    name: "{{ packages }}"
+    state: latest
+    update_cache: yes
   vars:
-  packages:
+    packages:
     - python-pip
     - yum-utils
     - device-mapper-persistent-data
