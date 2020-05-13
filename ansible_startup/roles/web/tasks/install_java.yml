@@ -8,6 +8,6 @@
 
 - name: Install Java OpenJDK
   yum: 
-    name: openjdk 
+    name: java-11-openjdk
     state: latest
   tags: javaOpenJDK
