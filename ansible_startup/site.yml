@@ -1,8 +1,11 @@
 ---
 # This playbook deploys the whole application stack in this site.
 
-- roles:
-  - geerlingguy.docker
+- name: install docker and compose
+  become: true
+  hosts: localhost
+  roles:
+    - geerlingguy.docker
 
 - name: configure, deploy and run the java microservice
   become: true
