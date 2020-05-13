@@ -1,0 +1,5 @@
+---
+# These tasks install goLang
+- name: Install Java OpenJDK
+  yum: name=openjdk state=present
+  tags: javaOpenJDK

@@ -1,5 +1,5 @@
-checkStatus=$(curl http://localhost:8080/calc/history)
-checkStatus2=$(sudo docker ps | grep -c goApp)
+checkStatus=$(curl http://localhost:8080/api/v1/healthCheck)
+checkStatus2=$(sudo docker ps | grep -c LogService)
 
 if [[ -z "$checkStatus" || $checkStatus2 -eq 0 ]]; then
     echo "Service is unavailable!"
