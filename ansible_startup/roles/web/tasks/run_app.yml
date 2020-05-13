@@ -1,4 +1,4 @@
 ---
 - name: Run App
   become: yes  
-  shell: docker-compose -f /home/vagrant/LogServiceWithRedis/docker-compose.yml up -d
+  shell: docker-compose -f /home/ec2-user/LogServiceWithRedis/docker-compose.yml up -d
