@@ -1,5 +1,13 @@
 ---
-# These tasks install goLang
+# These tasks install Java Open JDK
+- name: Update all packages before Java
+  yum:
+    name: '*'
+    state: latest
+    update_only: yes
+
 - name: Install Java OpenJDK
-  yum: name=openjdk state=present
+  yum: 
+    name: openjdk 
+    state: latest
   tags: javaOpenJDK

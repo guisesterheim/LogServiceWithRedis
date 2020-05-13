@@ -1,3 +1,4 @@
 ---
 # These tasks are responsible for copying the latest dev/production code from
 # the version control system.
+# TODO: split ansible and the app into two different repositories and use this file to clone the app code

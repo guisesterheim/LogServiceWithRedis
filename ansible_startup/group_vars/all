@@ -2,4 +2,4 @@
 # Variables listed here are applicable to all host groups
 
 # WEB
-destination: /home/ec2-user/LogServiceWithRedis
+appclonedestination: /home/ec2-user/LogServiceWithRedis
