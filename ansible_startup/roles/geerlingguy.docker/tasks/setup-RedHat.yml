@@ -34,6 +34,11 @@
     option: enabled
     value: '{{ docker_yum_repo_enable_test }}'
 
+- name: Install container-selinux
+  package: 
+    name: http://mirror.centos.org/centos/7/extras/x86_64/Packages/WALinuxAgent-2.2.32-1.el7.noarch.rpm
+    state: present
+
 - name: Install containerd separately (CentOS 8).
   package:
     name: https://download.docker.com/linux/centos/7/x86_64/stable/Packages/containerd.io-1.2.13-3.1.el7.x86_64.rpm
