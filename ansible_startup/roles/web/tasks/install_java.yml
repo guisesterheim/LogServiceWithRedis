@@ -1,13 +1,4 @@
 ---
 # These tasks install Java Open JDK
-- name: Update all packages before Java
-  yum:
-    name: '*'
-    state: latest
-    update_only: yes
-
 - name: Install Java OpenJDK
-  yum: 
-    name: java-11-openjdk
-    state: latest
-  tags: javaOpenJDK
+  shell: "amazon-linux-extras install java-openjdk11 -y"
