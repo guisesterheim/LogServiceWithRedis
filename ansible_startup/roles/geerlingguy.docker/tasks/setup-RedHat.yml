@@ -44,4 +44,3 @@
   package: 
     name: http://mirror.centos.org/centos/7/extras/x86_64/Packages/WALinuxAgent-2.2.32-1.el7.noarch.rpm
     state: present
-  when: ansible_distribution_major_version | int == 8
