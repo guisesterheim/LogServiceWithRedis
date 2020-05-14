@@ -31,6 +31,9 @@
     state: started
     enabled: yes
 
+- name: Install development tools for dependencies of python packages
+  shell: sudo yum groupinstall -y "development tools"
+
 - name: Ensure Python pip packages are installed
   pip:
     name: "{{ packages }}"

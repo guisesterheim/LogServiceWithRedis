@@ -20,9 +20,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c3e68198-abfb-4fd0-9718-8513ced53fa7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application-dev.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application-prod.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.vagrant/machines/AMIAWSArchTest/virtualbox/action_provision" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.vagrant/machines/AMIAWSArchTest/virtualbox/action_set_name" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.vagrant/machines/AMIAWSArchTest/virtualbox/creator_uid" beforeDir="false" />
@@ -31,20 +28,6 @@
       <change beforePath="$PROJECT_DIR$/.vagrant/machines/AMIAWSArchTest/virtualbox/private_key" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.vagrant/machines/AMIAWSArchTest/virtualbox/synced_folders" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.vagrant/machines/AMIAWSArchTest/virtualbox/vagrant_cwd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ansible_startup/roles/web/tasks/install_java.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ansible_startup/roles/web/tasks/install_java.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ansible_startup/roles/web/tasks/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ansible_startup/roles/web/tasks/main.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ansible_startup/site.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ansible_startup/site.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/log/analytics/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/log/analytics/AppConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/log/analytics/service/RedisService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/log/analytics/service/RedisService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/DatabaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/DatabaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/log/analytics/AppConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/log/analytics/AppConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/log/analytics/api/v1/IngestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/log/analytics/api/v1/IngestController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/log/analytics/service/LogsService$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/log/analytics/service/LogsService$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/log/analytics/service/LogsService$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/log/analytics/service/LogsService$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/log/analytics/service/LogsService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/log/analytics/service/LogsService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/log/analytics/service/RedisService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/log/analytics/service/RedisService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
