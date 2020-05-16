@@ -29,7 +29,7 @@ public class IngestController {
     @GetMapping("/healthCheck")
     public ResponseEntity healthCheck() {
         if(logService.healthCheck())
-            return ResponseEntity.ok().build();
+            return ResponseEntity.ok("OK");
 
         return ResponseEntity.badRequest().body(ERROR_APP_IS_DOWN);
     }
@@ -47,7 +47,7 @@ public class IngestController {
             ret.setMostAccessedURLPerRegion(logService.findMostURLsAccessedPerRegion(RegionEnum.USWEST2));
 
             return ResponseEntity.ok(ret);
-        }catch(NoDataFoundException nex){
+        }catch(NoDataFoundException nex) {
             return ResponseEntity.badRequest().build();
         }
     }

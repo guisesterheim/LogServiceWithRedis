@@ -132,14 +132,17 @@ public class LogsService {
 
         return keys.stream()
                 // Creates a SingleMetric object with the metric (key), the count and the region
+                .filter(s -> s.split("\\|").length > 1)
                 .map(s -> {
+                    String[] splittedLog = s.split("\\|");
+
                     long timestamp = Long.parseLong(s.split("\\|")[1]);
                     time.setTime(new Date(timestamp));
 
                     return new SingleMetric()
-                                .setKey(String.valueOf(time.get(timeFormat)))
-                                .setCount((int) keys.stream().filter(filter -> filter.equals(s)).count())
-                                .setRegion(region);
+                            .setKey(String.valueOf(time.get(timeFormat)))
+                            .setCount((int) keys.stream().filter(filter -> filter.equals(s)).count())
+                            .setRegion(region);
                 })
 
                 .sorted(Comparator.comparing(SingleMetric::getCount).reversed())
